@@ -13,12 +13,9 @@ def calculate(num1, num2, operation):
     else:
         return "Invalid operation."
 
-try:
-    num1=float(input("Enter the first number: "))
-    num2=float(input("Enter the second number: "))
-    operation=input("Enter an operation (+, -, *, /): ")
+num1=float(input("Enter the first number: "))
+num2=float(input("Enter the second number: "))
+operation=input("Enter an operation (+, -, *, /): ")
+result=calculate(num1, num2, operation)
+print(f"The result is: {result}")
 
-    result=calculate(num1, num2, operation)
-    print(f"The result is: {result}")
-except ValueError:
-    print("Invalid input. Please enter valid numbers.")
